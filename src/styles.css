@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+
+  /* .mainPage {
+    text-align: center;
+    justify-content: center;
+    display: block;
+    
+  } */
+
+  .elements {
+    margin: 20px 0;
+    text-align: center;
+    justify-content: center;
+    display: block;
+  }
+
+  .box {
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin: 30vh;
+  }
+
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

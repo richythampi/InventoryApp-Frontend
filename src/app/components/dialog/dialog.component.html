@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="productForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Product Name</mat-label>
+            <input formControlName="productName" matInput placeholder="Name">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Product Category</mat-label>
+            <mat-select formControlName="category" placeholder="Category">
+                <mat-option *ngFor="let Category of CategoryList" [value]="Category">{{Category}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="accent" mat-dialog-close>Close</button>
+    <button style="margin: left 10px;" mat-raised-button color="warn" (click)="addProduct()">{{actionButton}}</button>
+</div>
